@@ -1,5 +1,7 @@
 # worley-noise
 
+I followed the [libGDX documentation](https://libgdx.badlogicgames.com/documentation/) and things started first try. WOOHOO!
+
 I'm using [Chocolatey](https://chocolatey.org/install) for package management
 
 choco install zulu11 intellijidea-community androidstudio android-sdk
