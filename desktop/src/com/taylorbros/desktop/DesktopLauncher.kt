@@ -2,7 +2,7 @@ package com.taylorbros.desktop
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration
-import com.taylorbros.WorleyNoise
+import com.taylorbros.WorleyNoiseApp
 
 object DesktopLauncher {
 
@@ -12,7 +12,7 @@ object DesktopLauncher {
         config.title = "Worley Noise"
         config.width = 1200
         config.height = 800
-        LwjglApplication(WorleyNoise(), config)
+        LwjglApplication(WorleyNoiseApp(), config)
     }
 
 }
