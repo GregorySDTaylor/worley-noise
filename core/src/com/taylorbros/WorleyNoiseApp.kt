@@ -2,10 +2,7 @@ package com.taylorbros
 
 import com.badlogic.gdx.ApplicationAdapter
 import com.badlogic.gdx.Gdx
-import com.badlogic.gdx.graphics.Pixmap
-import com.badlogic.gdx.graphics.Texture
 import com.badlogic.gdx.graphics.g2d.SpriteBatch
-import com.badlogic.gdx.math.MathUtils
 
 class WorleyNoiseApp : ApplicationAdapter() {
 
@@ -15,7 +12,7 @@ class WorleyNoiseApp : ApplicationAdapter() {
 
     override fun create() {
         batch = SpriteBatch()
-        noise = WorleyNoise(Gdx.graphics.width, Gdx.graphics.height, 30, 100F)
+        noise = WorleyNoise3D(Gdx.graphics.width, Gdx.graphics.height, 30, 100F)
     }
 
     override fun render() {
