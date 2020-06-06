@@ -15,7 +15,7 @@ class WorleyNoiseApp : ApplicationAdapter() {
 
     override fun create() {
         batch = SpriteBatch()
-        noise = WorleyNoise(Gdx.graphics.width, Gdx.graphics.height, 100)
+        noise = WorleyNoise(Gdx.graphics.width, Gdx.graphics.height, 50, 200F)
     }
 
     override fun render() {
