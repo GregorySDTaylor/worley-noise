@@ -75,7 +75,7 @@ class WorleyNoise3D(renderWidth: Int, renderHeight: Int, pointCount: Int, maxDis
 
             for (x in (center.x-radius).toInt() .. (center.x+radius).toInt()) {
                 for (y in (center.y-radius).toInt() .. (center.y+radius).toInt()) {
-                    if (x < 0 || y < 0 || x >=d pixelMap.width || y >= pixelMap.height || drawnMap[x][y]) continue
+                    if (x < 0 || y < 0 || x >= pixelMap.width || y >= pixelMap.height || drawnMap[x][y]) continue
 
                     val xr = x - center.x
                     val yr = y - center.y
