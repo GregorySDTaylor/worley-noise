@@ -10,8 +10,8 @@ object DesktopLauncher {
     fun main(arg:Array<String>) {
         val config = LwjglApplicationConfiguration()
         config.title = "Worley Noise"
-        config.width = 200
-        config.height = 200
+        config.width = 1920
+        config.height = 1080
         LwjglApplication(WorleyNoiseApp(), config)
     }
 

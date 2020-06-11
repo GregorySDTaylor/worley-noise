@@ -5,6 +5,7 @@ import com.badlogic.gdx.graphics.Pixmap
 import com.badlogic.gdx.math.MathUtils
 import kotlin.collections.HashSet
 import com.badlogic.gdx.graphics.Texture
+import com.badlogic.gdx.graphics.g2d.SpriteBatch
 import com.badlogic.gdx.math.Vector3
 
 class WorleyNoise3D(renderWidth: Int, renderHeight: Int, pointCount: Int, maxDistance: Float) : WorleyNoise() {
@@ -33,7 +34,7 @@ class WorleyNoise3D(renderWidth: Int, renderHeight: Int, pointCount: Int, maxDis
         }
     }
 
-    public override fun drawTexture(): Texture {
+    fun drawTexture(): Texture {
         drawNoise()
         if (renderPoints) {
             drawPoints()
@@ -78,6 +79,10 @@ class WorleyNoise3D(renderWidth: Int, renderHeight: Int, pointCount: Int, maxDis
                 it.y = MathUtils.random(lowerBoundY, upperBoundY).toFloat()
             }
         }
+    }
+
+    override fun batchDraw(batch: SpriteBatch) {
+        batch.draw(drawTexture(), 0f, 0f)
     }
 
 }
